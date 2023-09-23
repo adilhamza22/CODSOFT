@@ -76,11 +76,11 @@ body{
     color: rgb(231, 62, 90);
 
 }
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
  body{
     padding: 5% 0;
  }
-}
+} */
 @media only screen and (max-width:425px){
     body{
         padding: 25% 0;
