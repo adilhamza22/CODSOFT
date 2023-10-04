@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema({
         required:[true,'User must have a password'],
     },
     posts:{
-        type:mongoose.Schema.types.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         ref:'Post',
     }
 });

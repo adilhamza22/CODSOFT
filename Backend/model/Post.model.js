@@ -14,6 +14,15 @@ const PostSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    authorId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+    },
+    state: {
+        type: String,
+        enum: ["draft", "published"],
+        default: "draft",
+    },
     image:{
         type:String,
         required:true,

@@ -8,3 +8,6 @@ app.listen(CONFIG.PORT,()=>{
     // res.send(`Server is running on port ${CONFIG.PORT}`);
 });
 
+app.get('/',(req,res)=>{
+    res.send('Server Running');
+});
