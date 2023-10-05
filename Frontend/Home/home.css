@@ -38,3 +38,24 @@ body{
 .right .card:hover{
     cursor: pointer;
 }
+
+/*  off canvas  */
+
+.my-account-offcanvas{
+    background-color: #000000;
+}
+
+.more-btn{
+
+    background-color: rgb(231, 62, 90) !important;
+}
+.more-menu{
+    background: black;
+}
+.more-menu a{
+    color:  rgb(231, 62, 90);
+    font-weight: 600;
+}
+.more-menu a:disabled{
+    color: rgb(80, 80, 80);
+}

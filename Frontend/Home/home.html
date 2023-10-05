@@ -12,7 +12,7 @@
        <title>BlogRhythm Home</title>
    </head>
    <body>
-    <div class="container-fluid logo-container">
+    <div class="container-fluid logo-container d-flex">
         <img class="logo" src="../Assets/Color logo - no background.svg" alt="BlogRhythm" width="100px" height="100px">
     </div>
        <div class="main container-fluid d-flex">
@@ -25,13 +25,42 @@
                   <a class="nav-link" href="#">Posts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">My Account</a>
+                  <a class="nav-link" data-bs-toggle="offcanvas" href="#my-account-offcanvas" role="button" aria-controls="my-account-offcanvas">
+                    My Account
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
                 </li>
+                
               </ul>
             </div>
+            <!-- off canvas -->
+            <div class="offcanvas offcanvas-start my-account-offcanvas" tabindex="-1" id="my-account-offcanvas" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="my-account-offcanvas-title">
+                  <img class="logo" src="../Assets/Color logo - no background.svg" alt="BlogRhythm" width="80px" height="80px">
+                  
+                </h5>
+                <button type="button" class="btn-close btn-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  "Unlock the rhythm of blogging with BlogRhythm's offcanvas magic!"
+                </div>
+                <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle more-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    Logout and Privacy
+                  </button>
+                  <ul class="dropdown-menu more-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" onclick="logOut()">Logout</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Change Password</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Deactivate</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- right container -->
             <div class="right container-fluid w-75 row d-flex">
                 <div class=" col-md-4 col-sm-12">
                     <div class="card" style="width: 15rem;">
@@ -63,5 +92,6 @@
             </div>
        </div>
    </body>
+   <script src="./home.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>
