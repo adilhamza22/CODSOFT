@@ -73,3 +73,11 @@ body{
 .logo-container .nav-link{
     color: rgb(235, 100, 122) !important;
 }
+/* carousel inner */
+.top-car-inner{
+    height: 30rem;
+}
+
+.blog-card img{
+    height: 80%;
+}
