@@ -14,10 +14,46 @@
    </head>
    <body>
     <div class="container-fluid logo-container d-flex">
-        <img class="logo" src="../Assets/Color logo - no background.svg" alt="BlogRhythm" width="100px" height="100px">
+        <!-- <img class="logo" src="../Assets/Color logo - no background.svg" alt="BlogRhythm" width="100px" height="100px"> -->
+
+        <!-- navbar -->
+        <nav class="top-nav navbar navbar-expand-lg navbar-dark bg-dark mx-0 mb-5 w-100 fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand bg-dark" href="#">        <img class="logo" src="../Assets/Color logo - no background.svg" alt="BlogRhythm" width="100px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" onclick="createNewPost()">Create New Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="getAllPosts()">Posts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="offcanvas" href="#my-account-offcanvas" role="button" aria-controls="my-account-offcanvas">
+                    My Account
+                  </a>
+                </li>
+                <!-- offcanvas -->
+                
+                <!-- li continued -->
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
     </div>
        <div class="main container-fluid d-flex">
-            <div class="left container-fluid w-25">
+            <!-- <div class="left container-fluid w-25">
                 <ul class="nav flex-column">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" onclick="createNewPost()">Create New Blog</a>
@@ -35,8 +71,9 @@
                 </li>
                 
               </ul>
-            </div>
+            </div> -->
             <!-- off canvas -->
+
             <div class="offcanvas offcanvas-start my-account-offcanvas" tabindex="-1" id="my-account-offcanvas" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="my-account-offcanvas-title">
@@ -61,9 +98,10 @@
                 </div>
               </div>
             </div>
+            
             <!-- right container -->
-            <div class="right container-fluid w-75 row d-flex">
-                <div class=" col-md-4 col-sm-12">
+            <div class="right container-fluid w-100 row d-flex">
+                <div class=" col-md-12 col-sm-12">
                     <div class="card" style="width: 15rem;">
                         <img src="../Assets/christoph-nolte-hUhP8wr_dBo-unsplash.jpg" class="card-img-top" alt="..." height="150px" width="150px">
                         <div class="card-body">
@@ -72,7 +110,7 @@
                       </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-12 col-sm-12">
                     <div class="card" style="width: 15rem;">
                         <img src="../Assets/side-img.jpg" class="card-img-top" alt="..."  height="150px" width="150px">
                         <div class="card-body">
@@ -82,7 +120,7 @@
                 </div>
 
 
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-12 col-sm-12">
                     <div class="card" style="width: 15rem;">
                         <img src="../Assets/caleb-george-5sF6NrB1MEg-unsplash.jpg" class="card-img-top" alt="..."  height="150px" width="150px">
                         <div class="card-body">

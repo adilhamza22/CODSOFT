@@ -59,3 +59,17 @@ body{
 .more-menu a:disabled{
     color: rgb(80, 80, 80);
 }
+
+/* logo container i.e top nav container */
+
+.logo-container{
+    height: 22vh;
+}
+.logo-container button{
+    color:white;
+    border-color: #e73e5a;
+    background-color: rgb(231, 62, 90);
+}
+.logo-container .nav-link{
+    color: rgb(235, 100, 122) !important;
+}
