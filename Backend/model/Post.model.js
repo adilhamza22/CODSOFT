@@ -14,6 +14,10 @@ const PostSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    body:{
+        type:String,
+        required:true,
+    },
     authorId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
@@ -25,10 +29,11 @@ const PostSchema = new mongoose.Schema({
     },
     image:{
         type:String,
-        required:true,
+        // required:true,
     },
     
 },{timestamps:true}
 );
 
 const Post = mongoose.model('Post',PostSchema);
+module.exports = Post;

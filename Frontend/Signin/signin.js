@@ -30,7 +30,8 @@ async function onSignin (){
         if(response.status==200){
             alert("Signin successful");
         }
-        localStorage.setItem('token',JSON.stringify(response.data.token));
+        localStorage.setItem('token',JSON.stringify(response.data.sendUser.token));
+        localStorage.setItem('user',JSON.stringify(response.data.sendUser));
         window.location.href='../Home/home.html';
     }).catch((err)=>{
         console.log(err);

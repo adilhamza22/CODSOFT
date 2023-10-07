@@ -54,9 +54,17 @@ exports.login = async (req,res,next)=>{
             return next(new Error('Incorrect email or password'));
         }
         const token = signToken(user._id);
+        let sendUser ;
+        let firstName = user.firstName;
+        let lastName = user.lastName;
+        let storedEmail = user.email;
+        let _id = user._id;
+        sendUser = {firstName,lastName,storedEmail,_id};
+        sendUser['token'] = token;
         res.status(200).json({
             status:"success",
-            token,
+            // token,
+            sendUser,
         });
     } catch (err) {
         console.log(err);
